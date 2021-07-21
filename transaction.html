@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bankcss/bank.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1 style="color: rgb(4, 119, 119); font-weight:1000;">MONEY TRANSFER</h1>
+        <div class="balance">
+         
+        <table class="recievers" > 
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email ID</th>
+                <th>Balance(INR)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="Name">Harsha</td>
+                <td>harsha@gmail.com</td>
+                <td id="HarshaBalance">20000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="Name">Lavanya</td>
+                <td>lav@gmail.com</td>
+                <td id="LavanyaBalance" >5000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="Name">Meghana</td>
+                <td>meg@gmail.com</td>
+                <td id="MeghanaBalance">6800</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="Name">Kalyani</td>
+                <td>kalyani@gmail.com</td>
+                <td id="KalyaniBalance">10000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="Name">Priya</td>
+                <td>priya@gmail.com</td>
+                <td id="PriyaBalance">8000</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="Name">Justin</td>
+                <td>justin@gmail.com</td>
+                <td id="JustinBalance">6800</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="Name">Chandra</td>
+                <td>chandra@gmail.com</td>
+                <td id="ChandraBalance">800</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="Name">Mahesh</td>
+                <td>mahesh@gmail.com</td>
+                <td id="MaheshBalance">1500</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="Name">Shwetha</td>
+                <td>shwetha@gmail.com</td>
+                <td id="ShwethaBalance">70000</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="Name">Abdul</td>
+                <td>abdul@gmail.com</td>
+                <td id="AbdulBalance">48000</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="Name">Suresh</td>
+                <td>suresh@gmail.com</td>
+                <td id="SureshBalance">20000</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="Name">Tarun</td>
+                <td>tarun@gmail.com</td>
+                <td id="TarunBalance" >5000</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="Name">Sudha</td>
+                <td>sudha@gmail.com</td>
+                <td id="SudhaBalance">6800</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class="Name">Fathima</td>
+                <td>fatima@gmail.com</td>
+                <td id="FathimaBalance">10000</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class="Name">Murthy</td>
+                <td>murthy@gmail.com</td>
+                <td id="MurthyBalance">8000</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class="Name">Frank</td>
+                <td>frank@gmail.com</td>
+                <td id="FrankBalance">6800</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td class="Name">Kalyan</td>
+                <td>kalyan@gmail.com</td>
+                <td id="KalyanBalance">800</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td class="Name">Gowtham</td>
+                <td>gowtham@gmail.com</td>
+                <td id="GowthamBalance">1500</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td class="Name">Praveen</td>
+                <td>praveen@gmail.com</td>
+                <td id="PraveenBalance">70000</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="Name">Siri</td>
+                <td>siri@gmail.com</td>
+                <td id="SiriBalance">48000</td>
+            </tr>
+        </table> 
+        </div>   
+        <div class="mydetails">
+            
+                <h2 style="position:relative; right:10px; border-radius: 5px; padding: 0 5px 0 5px;color: rgb(1, 82, 82);">My account details</h2>
+                <h3 style="padding-bottom:8px; font-size:1.2rem;font-weight: lighter;">My Name: Srestha</h3>
+                <div class="h2"><h3 style="padding-bottom:8px; font-size:1.2rem;font-weight: lighter;">My Balance: ₹</h3></div>
+                <div class="b"><h3 id="SresthaBalance">5000000</h3></div>
+
+        </div>        
+        <div class="transaction">
+            <form action="" name="transfer" method="POST">
+                <label style="font-size:1.2rem;">Transfer to:</label>
+                <select  name="To" id="To" placeholder="Reciever's name" required> <!--FOR DROP DOWN OPTIONS-->
+                    <option>--Select Reciever--</option>
+                    <option>Harsha</option>
+                    <option>Meghana</option>
+                    <option>Lavanya</option>
+                    <option>Priya</option>
+                    <option>Kalyani</option>
+                    <option>Justin</option>
+                    <option>Chandra</option>
+                    <option>Mahesh</option>
+                    <option>Abdul</option>
+                    <option>Shwetha</option>
+                    <option>Suresh</option>
+                    <option>Tarun</option>
+                    <option>Sudha</option>
+                    <option>Fathima</option>
+                    <option>Murthy</option>
+                    <option>Frank</option>
+                    <option>Kalyan</option>
+                    <option>Gowtham</option>
+                    <option>Praveen</option>
+                    <option>Siri</option>
+                </select><br>
+
+                <label style="font-size:1.2rem;">Amount:</label>
+                <input type="text" name="Amount" id="Amount" placeholder="Amount" ><br>
+
+                <input style="font-size:1.2rem; background-color: rgb(85, 202, 202);" type="button" name="submit" value="Transfer" onclick="return Transfer()" >
+                
+            </form> 
+        </div>
+        <script src="bank.js" charset="utf-8"></script>
+    </body>    
+        
+</html>
